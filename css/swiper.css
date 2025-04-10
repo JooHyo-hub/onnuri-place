@@ -1,0 +1,109 @@
+/* main_visual */
+.main_visual .swiper {
+    width: 100%;
+    height: 800px;
+}
+.main_visual .swiper-wrapper {
+    /* transition-timing-function: linear; */
+}
+.main_visual .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main_visual .swiper-slide>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
+
+.main_visual .swiper-button-next {
+    right: 0;
+}
+
+.main_visual .swiper-button-prev {
+    left: 0;
+}
+
+.main_visual .swiper-button-next,
+.main_visual .swiper-button-prev {
+    width: 100px;
+    height: 100px;
+}
+
+.main_visual .swiper-button-next img,
+.main_visual .swiper-button-prev img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_visual .swiper-button-next::after,
+.main_visual .swiper-button-prev::after {
+    display: none;
+}
+
+.main_visual .swiper-button-disabled {
+    opacity: 1;
+}
+
+.main_visual .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.5;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.main_visual .swiper-pagination-bullet-active {
+    width: 32px;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+/* 예배페이지 */
+#home .mainIndex .section01 .mob-swiper .swiper-slide {
+    padding: 16px 0;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+}
+#home .mainIndex .section01 .mob-swiper .swiper-border {
+    gap: 1vw;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    justify-content: center;
+}
+#home .mainIndex .section01 .foor1-swiper .swiper-slide {
+    width: calc(100% / 3) !important;
+    color: #222;
+}
+#home .mainIndex .section01 .mob-swiper .swiper-slide {
+    width: 25% !important;
+}
+@media (max-width: 382px) {
+    #home .mainIndex .section01 .mob-swiper .swiper-slide {
+        font-size: 15px;
+    }
+}
+
+/* 예배페이지 모달 */
+.main-modal-content .swiper-button-next:after, 
+.main-modal-content .swiper-button-prev:after {
+    padding: 0 14px;
+    height: 74px;
+    line-height: 74px;
+    color: #fff;
+    font-size: 24px;
+    background: #00000093;
+}
+.main-modal-content .swiper-button-next {
+    right: 0 !important;
+}
+.main-modal-content .swiper-button-prev {
+    left: 0 !important;
+}
